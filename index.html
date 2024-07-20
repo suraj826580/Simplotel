@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simplotel</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <img src="./images/phoenix-logo.png" alt="Logo" class="logo-img" />
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link"><b>Home</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><b>Order Food</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><b>Restaurant</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><b>Testimonial</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"><b>Contact Us</b></a>
+          </li>
+        </ul>
+        <div class="social-icons">
+          <a href="#" class="social-icon"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a href="#" class="social-icon"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section>
+        <img src="./images/heroimg.jpg" alt="hero image" class="hero-image" />
+      </section>
+
+      <section>
+        <div class="grid-textContainer">
+          <div class="child-grid-textContainer">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+              quis, officiis assumenda eveniet minus quas iusto ut optio
+              distinctio officia magni quia mollitia doloremque ducimus rerum
+              aut reprehenderit, maiores autem!
+            </p>
+          </div>
+          <div class="child-grid-textContainer">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+              quis, officiis assumenda eveniet minus quas iusto ut optio
+              distinctio officia magni quia mollitia doloremque ducimus rerum
+              aut reprehenderit, maiores autem!
+            </p>
+          </div>
+          <div class="child-grid-textContainer">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+              quis, officiis assumenda eveniet minus quas iusto ut optio
+              distinctio officia magni quia mollitia doloremque ducimus rerum
+              aut reprehenderit, maiores autem!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h1>Lorem Ipsum</h1>
+          <div class="features">
+            <div class="feature">
+              <img src="./images/rooms.jpg" alt="Hotel Room" />
+              <div class="feature-content">
+                <h2>ROOMS</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#" class="learn-more">Learn More</a>
+              </div>
+            </div>
+            <div class="feature">
+              <img src="./images/dining.jpg" alt="Dining" />
+              <div class="feature-content">
+                <h2>DINING</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#" class="learn-more">Learn More</a>
+              </div>
+            </div>
+            <div class="feature">
+              <img src="./images/pool.jpg" alt="Pool" />
+              <div class="feature-content">
+                <h2>POOLS</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#" class="learn-more">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
+  </body>
+</html>
